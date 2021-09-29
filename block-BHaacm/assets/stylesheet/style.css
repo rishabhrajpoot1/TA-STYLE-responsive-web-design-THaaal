@@ -52,21 +52,28 @@ table {
 	border-spacing: 0;
 }
 /* Custom Style */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
 body{
     line-height: 1.5;
-    font-family: sans-serif;
+    font-family: "Open Sans" sans-serif;
+    font-size: 1.4rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 'Source Serif Pro', serif;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1380px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 60px;
 }
-.flex{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 :root{
     --primary:rgb(33,41,70);
     --bg:rgb(233,236,252);
@@ -77,86 +84,167 @@ body{
 a{
     text-decoration: none;
 }
-/* Header */
-html{
-    font-size: 16px;
+.padding{
+    padding: 5rem 0;
 }
-.header{
-    background-color:var(--primary) ;
-    padding: 15px 0;
+/* flex */
+.flex{
+    display: flex;
 }
-.nav a{
-    text-transform: uppercase;
-    font-size: 1.5rem;
-    color: white;
-    margin-left: 1.2rem;
+.justify-between{
+    justify-content: space-between;
 }
-.active a{
-    color: var(--tertiary);
+.justify-center{
+    justify-content: center;
 }
-/* section */
-.section-1{
-    background-color: var(--bg);
+.justify-end{
+    justify-content: flex-end;
 }
-.article-1{
-    padding: 5rem;
+.item-start{
+    align-items: flex-end;
 }
-h1{
-    font-size: 2.5rem;
+.item-center{
+    align-items: center;
 }
-.para{
-    font-size: 20px;
-    color: var(--text-light);
-    margin: 20px 0;
+.wrap{
+    flex-wrap: wrap;
 }
+.coloumn{
+    flex-direction: column;
+}
+/* coloumn */
+.flex-15{
+    flex: 0 1 15%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-25{
+    flex: 0 1 25%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.grow{
+    flex: 1 1 auto;
+}
+/* full width */
+.width-full{
+    width: 100%;
+}
+/* Center Element */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* btn */
 .btn{
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
     background-color: var(--tertiary);
     color: white;
-    padding: 10px 25px;
-    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 2rem;
 }
-h2{
-    margin: 50px 0;
-    font-size: 3rem;
+.btn:hover{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    opacity: 0.8;
+    color: white !important;
+}
+/* Text */
+.text-center{
     text-align: center;
 }
-h3{
+.text-right{
+    align-items: right;
+}
+.text-light{
+    color: var(--text-light);
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.font-0{
+    font-size: 0;
+}
+/* Heading */
+.heading{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+.heading-secondary{
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.navbar{
+    background-color: var(--primary);
+    padding: 1rem 0;
+}
+.nav-item{
+    margin-left: 2rem;
+}
+.nav-item a{
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.nav-item a:hover{
+    color: var(--tertiary);
+}
+ .nav-item .active{
+    color: var(--tertiary);
+}
+/* hero */
+.hero{
+    background-color: var(--bg);
+}
+/* blog */
+.blog h3{
     font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--text-dark);
 }
-.gallery-article{
-    width: 100%;
+.blog p{
+    font-size: 1.2rem;
 }
-.gallery-article img{
-    width: 100%;
+.blog .btn{
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+}
+.blog img{
+    max-height: 300px;
 }
 .article-info{
-    margin-left: 2.6rem;
+   margin-left: 2.5rem;
 }
 /* footer */
 footer{
-    padding: 20px;
-    margin-top: 30px;
     background-color: var(--primary);
-}
-small{
-    padding-left: 5rem;
     color: white;
-    font-size: 1.5rem;
+    padding: 3rem 0;
 }
-.font{
-    padding-right: 5rem;
-}
-.font i{
+footer a{
+    margin-left: 2rem;
+    color: white;
     font-size: 2rem;
-    margin-left: 1.2rem;
-    color: rgb(188,192,209);
-}
-@media screen and (max-width:768) {
-    html{
-        font-size: 10px;
-    }
-    body{
-        color: aliceblue;
-    }
-    
 }
