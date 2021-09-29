@@ -1,0 +1,250 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* Custom Style */
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    line-height: 1.5;
+    font-family: "Open Sans" sans-serif;
+    font-size: 1.4rem;
+}
+h1,h2,h3,h4,h5,h6{
+    font-size: 'Source Serif Pro', serif;
+}
+.container{
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+:root{
+    --primary:rgb(33,41,70);
+    --bg:rgb(233,236,252);
+    --tertiary:rgb(54,182,103);
+    --text-dark:rgb(2,6,18);
+    --text-light:rgb(167,168,170);
+}
+a{
+    text-decoration: none;
+}
+.padding{
+    padding: 5rem 0;
+}
+/* flex */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.item-start{
+    align-items: flex-end;
+}
+.item-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.coloumn{
+    flex-direction: column;
+}
+/* coloumn */
+.flex-15{
+    flex: 0 1 15%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-25{
+    flex: 0 1 25%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.grow{
+    flex: 1 1 auto;
+}
+/* full width */
+.width-full{
+    width: 100%;
+}
+/* Center Element */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    background-color: var(--tertiary);
+    color: white;
+    transition: all 200ms ease-in-out;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+.btn:hover{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    opacity: 0.8;
+    color: white !important;
+}
+/* Text */
+.text-center{
+    text-align: center;
+}
+.text-right{
+    align-items: right;
+}
+.text-light{
+    color: var(--text-light);
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.font-0{
+    font-size: 0;
+}
+/* Heading */
+.heading{
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--text-dark);
+    text-transform: capitalize;
+    margin-top: 2rem;
+}
+.heading-secondary{
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.navbar{
+    background-color: var(--primary);
+    padding: 1rem 0;
+}
+.nav-item{
+    margin-left: 2rem;
+}
+.nav-item a{
+    color: white;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.nav-item a:hover{
+    color: var(--tertiary);
+}
+ .nav-item .active{
+    color: var(--tertiary);
+}
+/* hero */
+.hero{
+    background-color: var(--bg);
+}
+/* blog */
+.blog h3{
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: var(--text-dark);
+}
+.blog p{
+    font-size: 1.2rem;
+}
+.blog .btn{
+    font-size: 1rem;
+    padding: 0.75rem 2rem;
+}
+.blog img{
+    max-height: 300px;
+}
+.article-info{
+   margin-left: 2.5rem;
+}
+/* footer */
+footer{
+    background-color: var(--primary);
+    color: white;
+    padding: 3rem 0;
+}
+footer a{
+    margin-left: 2rem;
+    color: white;
+    font-size: 2rem;
+}
