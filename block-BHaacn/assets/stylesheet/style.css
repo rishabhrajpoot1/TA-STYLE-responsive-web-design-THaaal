@@ -1,0 +1,495 @@
+/* http://meyerweb.com/eric/tools/css/reset/ */
+/* v1.0 | 20080212 */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+
+/* remember to highlight inserts somehow! */
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+figure{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+img{
+    width: 100%;
+}
+/* Custom Style */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+.container{
+    max-width: 1380px;
+    width: 100%;
+    padding: 0 32px;
+    margin: 0 auto;
+}
+
+:root{
+    --primary:rgb(249,35,76);
+    --bg:rgb(222,236,255);
+    --secondary:rgb(35,52,123);
+    --tertiary:rgb(16,33,105);
+    --text-dark:rgb(0,19,45);
+    --text-light:rgb(109,108,114);
+    --text-white:#fff;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.padding{
+    padding: 5rem 0;
+}
+/* flex */
+.flex{
+    display: flex;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-end{
+    justify-content: flex-end;
+}
+.item-start{
+    align-items: flex-end;
+}
+.item-center{
+    align-items: center;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+.coloumn{
+    flex-direction: column;
+}
+/* coloumn */
+.flex-10{
+    flex: 0 1 10%;
+}
+.flex-15{
+    flex: 0 1 15%;
+}
+.flex-20{
+    flex: 0 1 20%;
+}
+.flex-25{
+    flex: 0 1 25%;
+}
+.flex-30{
+    flex: 0 1 30%;
+}
+.flex-32{
+    flex: 0 1 32%;
+}
+.flex-40{
+    flex: 0 1 40%;
+}
+.flex-45{
+    flex: 0 1 45%;
+}
+.flex-50{
+    flex: 0 1 50%;
+}
+.flex-60{
+    flex: 0 1 60%;
+}
+.flex-75{
+    flex: 0 1 75%;
+}
+.flex-85{
+    flex: 0 1 85%;
+}
+.flex-90{
+    flex: 0 1 90%;
+}
+.grow{
+    flex: 1 1 auto;
+}
+.margin-bottom{
+    margin-bottom: 6rem;
+}
+/* full width */
+.width-full{
+    width: 100%;
+}
+/* Center Element */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* btn */
+.btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    letter-spacing: 0.8px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    transition: all 200ms ease-in-out;
+    font-size: 1.3rem;
+    border-radius: 4px;
+    font-weight: 600;
+}
+.btn:hover{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    opacity: 0.8;
+    color: white !important;
+}
+/* Text */
+.text-center{
+    text-align: center;
+}
+.text-right{
+    align-items: right;
+}
+.text-light{
+    color: var(--text-light);
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.font-0{
+    font-size: 0;
+}
+/* bar */
+.bars{
+    display: none;
+}
+.input{
+    display: none;
+}
+/* Hero */
+.hero{
+    background: linear-gradient( to right, rgba(52,35,165,0.7),rgba(52,35,165,0.7)) , url(../media/banner.png) no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 1.5rem;
+    padding-bottom: 5rem;
+}
+.header{
+    padding-bottom: 4.5rem;
+}
+.brand{
+    letter-spacing:-0.12rem;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+.nav-menu a{
+    margin-left: 2rem;
+}
+.btn-1{
+    margin-left: 2rem;
+}
+.heading{
+    margin-bottom: 3rem;
+    font-size: 4.4rem;
+    font-weight: 800
+}
+/* about */
+.red{
+    color: var(--primary);
+}
+.btn-2{
+   margin-top: 2rem;
+}
+h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+/* join */
+.join{
+    background-color: var(--bg);
+    padding: 2rem 0;
+}
+.join-article{
+    margin: 4rem 0;
+    position: relative;
+    letter-spacing: -0.12rem;
+    padding: 2rem;
+    border: 2px dashed var(--primary);
+}
+strong{
+    position: absolute;
+    padding: 0 0.5rem;
+    font-size: 3rem;
+    margin-top: -4.3rem;
+    background-color: var(--bg);
+    color: var(--primary);
+}
+h3{
+    font-size: 2rem;
+}
+/* Schedule */
+.circle{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: white;
+}
+.time{
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+.Schedule-article{
+    margin-top: 3rem;
+}
+hr{
+    border: none;
+    border: 1px dashed var(--primary);
+    font-size: 0;
+    height: 6.2rem;
+}
+.circle-2{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    color: var(--primary);
+    border: 2px dashed var(--primary);
+}
+.schedule-img{
+    width: 100%;
+    border-radius: 5px;
+}
+.btn-3{
+    display: block;
+    width: 16rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+}
+/* logo */
+.logo{
+    background-color: var(--bg);
+    padding: 3rem 0;
+}
+.logo-info{
+    margin: 0 auto;
+    padding: 2rem 4rem;
+}
+.logo-info img{
+    margin-bottom: 1.5rem;
+    width: 40%;
+}
+h4{
+    font-size: 2rem;
+}
+.logo-para{
+    font-size: 1.5rem;
+}
+.idea-active{
+    color: white;
+    background-color: var(--primary);
+    border-radius: 0.3rem;
+}
+/* Vedio */
+h4{
+    text-align: center;
+}
+.play-image{
+    position: relative;
+}
+.play-image img{
+    border-radius: 1rem;
+}
+.play-button{
+    font-size: 8rem;
+    margin: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* News */
+.news-heading{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.news{
+    padding: 4rem 0;
+    background-color: var(--bg);
+}
+.news-article-heading{
+    font-size: 1.5rem;
+}
+.read-more{
+    text-decoration: underline;
+    color: var(--text-dark);
+    font-size: 1.6rem;
+}
+.active{
+    color: var(--primary);
+}
+/* Footer */
+.footer{
+    background-color: var(--tertiary);
+    text-align: center;
+    padding: 1rem;
+    color: white;
+ }
+ .follow-us{
+     margin-right: 16rem;
+ }
+.link{
+    background-color: var(--secondary);
+    padding: 1.5rem;
+    color: white;
+}
+.quick-link li{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+.quick-link li a{
+    color:rgb(188,192,209);
+}
+/* bar */
+#toggle:checked{
+    display: none;
+}
+
+/* small screen */
+@media screen and (max-width:768px) {
+    html{
+        font-size: 10px;
+    }
+    img{
+        width: 100%;
+    }
+    .navbar{
+        display: none;
+    }
+    .brand{
+        color: red;
+        position: fixed;
+        left: 32px;
+        top: 12px;
+        z-index: 1;
+    }
+    .navbar li{
+        margin: 16px 0;
+    }
+    .navbar ul{
+        display: flex;
+        align-items: center;
+    }
+    .input{
+        display: none;
+    }
+    .navbar .btn-1{
+        margin-left: 15.5rem;
+        
+    }
+    #toggle:checked ~ .navbar {
+        display: inline-block;
+    }
+    .bars{
+        display: inline-block;
+        font-size: 24px ;
+        color:red;
+        position: fixed;
+        right: 2rem;
+        top: 1.2rem;
+        z-index: 2;
+    }
+    .navbar{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color:rgba(33,57,106,0.9);
+        padding-top: 12rem;
+        z-index: 1;
+    }
+    .meadia-coloumn{
+        flex-direction: column;
+    }
+    .center{
+        flex-direction: column;
+    }
+    .btn-2{
+        margin-bottom: 1.5rem;
+    }
+    .play-image{
+        position: relative;
+    }
+    .play-button{
+        font-size: 7rem;
+    }
+    .btn-3{
+        padding: 0.5rem;
+        margin-top: 1rem;
+    }
+    .news-article{
+        margin-bottom: 2rem;
+    }
+    .follow-us{
+        margin:0
+    } 
+    
+}
